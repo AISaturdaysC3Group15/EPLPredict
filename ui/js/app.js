@@ -42,14 +42,14 @@ function getPrediction(e){
     };
 
     fetch(url, otherPram)
-    .then(function(res){
+    .then(function(res){ 
         return res.json()
     }).then(function(data){
 
         if (data['status code'] === '200'){
             document.getElementById("prediction").innerHTML = "Player's value is " + data.message + ' million pounds';
-        }else if(data['status code'] === '500'){
-            document.getElementById("prediction").innerHTML = data.message;
+        }else {
+            document.getElementById("prediction").innerHTML = "Invalid Input";
         }
             
         toggleModal();
