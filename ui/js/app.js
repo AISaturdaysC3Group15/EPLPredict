@@ -19,7 +19,7 @@ function getPrediction(e){
     const bigClub = document.getElementById('big-club');
     const bigClubCategory = bigClub[bigClub.selectedIndex].value;
 
-    const url = 'http://localhost:5000/api/predict';
+    const url = 'https://epl-player-mv-predictor.herokuapp.com/api/predict';
 
     let data = {
                   age : age,
@@ -56,7 +56,7 @@ function getPrediction(e){
         console.log(data)
 
     }).catch(function(err){
-        document.getElementById("prediction").innerHTML = 'Network Error';
+        document.getElementById("prediction").innerHTML = 'Connection Error';
         toggleModal();
         console.log(err)
     });
