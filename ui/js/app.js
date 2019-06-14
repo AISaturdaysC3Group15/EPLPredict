@@ -56,7 +56,7 @@ function getPrediction(e){
         console.log(data)
 
     }).catch(function(err){
-        document.getElementById("prediction").innerHTML = 'Network Error';
+        document.getElementById("prediction").innerHTML = 'Connection Error';
         toggleModal();
         console.log(err)
     });
