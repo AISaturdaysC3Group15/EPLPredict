@@ -1,0 +1,3 @@
+webpage: https://aisaturdaysc3group15.github.io/EPLPredict/ui/
+heroku app:  epl-player-mv-predictor
+heroku web app endpoint: https://epl-player-mv-predictor.herokuapp.com/api/predict
