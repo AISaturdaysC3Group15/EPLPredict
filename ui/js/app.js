@@ -1,9 +1,7 @@
 document.querySelector('.predict').addEventListener('click', getPrediction);
 
 function getPrediction(e){
-    console.log('prediction');
     const age = document.getElementById('age').value;
-    
 
     const position = document.getElementById('position-cat');
     const positionCategory = position[position.selectedIndex].value;
@@ -62,7 +60,6 @@ function getPrediction(e){
     });
 
     e.preventDefault();
-    console.log('hello');
 }
 
 const modal = document.querySelector(".modal");

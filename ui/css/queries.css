@@ -1,6 +1,13 @@
 @media only screen and (max-width: 1023px) {
+    h1 {
+        font-size: 150%;
+    }
 
+    .form-container{
+        margin:  10% 30%;
+        grid-row-gap: 2em;
 
+    }
 }
 
 
@@ -8,18 +15,27 @@
     h1 {
         font-size: 150%;
     }
+
+    .form-container{
+        margin:  5% 25%;
+        grid-row-gap: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .pg-background {
+        height: 120vh;
+    }
+
     h1 {
         font-size: 100%;
-        padding-top: 50px;
-        margin-bottom: 20px;
+        padding-top: 0 50px;
 
     }
 
     .form-container{
-        margin-top: 30px;
+        margin:  5% 20%;
+        grid-row-gap: 1em;
     }
 
     button{
@@ -57,5 +73,23 @@
         cursor: pointer;
         border-radius: 0.25rem;
         background-color: lightgray;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .pg-background {
+        height: 120vh;
+    }
+
+    h1 {
+        font-size: 100%;
+        padding-top: 0 50px;
+
+    }
+
+    .form-container{
+        margin:  5% 20%;
+        grid-row-gap: 1em;
     }
 }
